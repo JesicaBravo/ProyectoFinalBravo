@@ -1,0 +1,325 @@
+body {
+    margin: 0px;
+
+}
+
+/*navbar*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Navbar links */
+.navbar h1 {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #020000;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+/*estilos del banner*/
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.4), rgba(27, 27, 27, 0.4)),
+        url("https://estaticos-cdn.epe.es/clip/19dca1e9-0237-4b08-a9ff-7b2add7a04a7_alta-libre-aspect-ratio_default_0.jpg");
+        background-position: top;
+}
+
+.banner-content {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner-content h1 {
+    margin: 0;
+    color: rgb(231, 221, 221);
+    text-shadow: 2px 2px #000000;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 90px;
+
+}
+
+.banner-content h2 {
+    margin: 0;
+    font-size: 40px;
+    color: rgb(250, 244, 244);
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+
+}
+
+/*product cards*/
+.shop-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 20px;
+
+}
+
+.card>img {
+    width: auto;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.price {
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 0.5;
+
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/*modal content*/
+.modal-container {
+    width: 80px;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+    flex-direction: column
+}
+
+.modal-container ::-webkit-scrollbar {
+    display: none;
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container>div>img {
+    height: 120px;
+    width: 120px;
+
+}
+
+.product-title {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 36px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.modal-content img {
+    width: 60px;
+    height: auto;
+}
+
+.modal-content {
+    width: 100px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 20px;
+    text-align: center;
+    font-family: arial;
+    margin: 10px auto;
+    line-height: 0.2;
+}
+
+#modalContainer {
+    flex-direction: column;
+    overflow: auto;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    max-height: 90vh;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 1;
+    right: 0;
+    transform: translateY(-50%);
+    width: 300px;
+    background: white;
+    z-index: 99999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.total-pagar {
+    text-align: center;
+
+}
+
+.card {
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.604);
+}
+
+.comprar {
+    max-width: max-content;
+    cursor: pointer;
+}
+
+#finalizar {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+#info {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#infoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#productInfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#productInfo > span {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+
+}
+
+
+#modalContainer > div:nth-child(2) {
+    margin-top: 120px;
+}
+
+p, h1, h2, h3, h4, div, span {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.total-pagar {
+    font-size: 22px;
+    font-weight: bold;
+}
+#guardar {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    color: darkblue
+}
+
+.card h3 {
+    font-size: 30px;
+    line-height: 0.2;
+}
+
+#shop-area {
+    background-image: url(https://cuidamostumascota.cl/wp-content/uploads/2023/08/HEADER-min-1.png);
+    height: 90vh;
+}
